@@ -30,4 +30,9 @@ public class FizzBuzzUtilTest {
     assertEquals(fizzBuzz(7), "Whizz");
     assertEquals(fizzBuzz(14), "Whizz");
   }
+
+  @Test
+  public void should_return_FizzBuzz_given_multiple_of_3_and_5() {
+    assertEquals(fizzBuzz(15), "FizzBuzz");
+  }
 }
