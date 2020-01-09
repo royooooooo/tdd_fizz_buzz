@@ -3,15 +3,12 @@ package com.thoughtworks;
 public class FizzBuzzUtil {
 
   public static String fizzBuzz(int number) {
-    if (number == 1) return "1";
-    if (number == 2) return "2";
-    if (number % 105 == 0) return "FizzBuzzWhizz";
-    if (number % 15 == 0) return "FizzBuzz";
-    if (number % 35 == 0) return "BuzzWhizz";
-    if (number % 21 == 0) return "FizzWhizz";
-    if (number % 3 == 0) return "Fizz";
-    if (number % 5 == 0) return "Buzz";
-    if (number % 7 == 0) return "Whizz";
-    return null;
+    String correctSlogan = "";
+    if (number == 1) correctSlogan += "1";
+    if (number == 2) correctSlogan += "2";
+    if (number % 3 == 0) correctSlogan += "Fizz";
+    if (number % 5 == 0) correctSlogan += "Buzz";
+    if (number % 7 == 0) correctSlogan += "Whizz";
+    return correctSlogan;
   }
 }
