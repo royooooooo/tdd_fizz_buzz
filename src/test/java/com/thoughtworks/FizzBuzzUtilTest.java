@@ -49,5 +49,6 @@ public class FizzBuzzUtilTest {
   @Test
   public void should_return_Fizz_if_contain_3() {
     assertEquals(fizzBuzz(13), "Fizz");
+    assertEquals(fizzBuzz(30), "Fizz");
   }
 }
