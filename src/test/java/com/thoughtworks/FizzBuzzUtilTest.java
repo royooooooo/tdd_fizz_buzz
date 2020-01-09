@@ -57,4 +57,8 @@ public class FizzBuzzUtilTest {
     assertEquals(fizzBuzz(57), "Fizz");
   }
 
+  @Test
+  public void should_return_Fizz_if_contain_7_and_multiple_of_5_and_3() {
+    assertEquals(fizzBuzz(75), "Fizz");
+  }
 }

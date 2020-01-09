@@ -12,6 +12,9 @@ public class FizzBuzzUtil {
       if (isContainsCharacter(number, "3")) {
         return "Fizz";
       }
+      if (number % 3 == 0) correctSlogan += "Fizz";
+      if (number % 7 == 0) correctSlogan += "Whizz";
+      return correctSlogan;
     } else if (isContainsCharacter(number, "5")) {
       correctSlogan += "Buzz";
       if (number % 7 == 0) correctSlogan += "Whizz";
