@@ -8,7 +8,11 @@ public class FizzBuzzUtil {
     String correctSlogan = "";
     if (number == 1) correctSlogan += "1";
     if (number == 2) correctSlogan += "2";
-    if (isContainsCharacter(number, "5")) {
+    if (isContainsCharacter(number, "7")) {
+      if (isContainsCharacter(number, "3")) {
+        return "Fizz";
+      }
+    } else if (isContainsCharacter(number, "5")) {
       correctSlogan += "Buzz";
       if (number % 7 == 0) correctSlogan += "Whizz";
       return correctSlogan;

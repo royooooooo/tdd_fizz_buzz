@@ -51,4 +51,10 @@ public class FizzBuzzUtilTest {
   public void should_return_BuzzWhizz_if_contain_5_and_multiple_of_5_and_3() {
     assertEquals(fizzBuzz(105), "BuzzWhizz");
   }
+
+  @Test
+  public void should_return_Fizz_if_contain_7_and_contain_5_and_multiple_of_3() {
+    assertEquals(fizzBuzz(57), "Fizz");
+  }
+
 }
