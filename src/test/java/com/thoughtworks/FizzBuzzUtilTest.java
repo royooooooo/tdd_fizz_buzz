@@ -43,7 +43,7 @@ public class FizzBuzzUtilTest {
   }
 
   @Test
-  public void should_return_Buzz_if_contain_5_and_ignore_multiple_of_3_rule() {
-    assertEquals(fizzBuzz(235), "Buzz");
+  public void should_return_BuzzWhizz_if_contain_5_and_contain_3() {
+    assertEquals(fizzBuzz(35), "BuzzWhizz");
   }
 }
