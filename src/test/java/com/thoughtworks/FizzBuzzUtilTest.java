@@ -18,4 +18,10 @@ public class FizzBuzzUtilTest {
     assertEquals(fizzBuzz(3), "Fizz");
     assertEquals(fizzBuzz(9), "Fizz");
   }
+
+  @Test
+  public void should_return_Buzz_given_multiple_of_5() {
+    assertEquals(fizzBuzz(5), "Buzz");
+    assertEquals(fizzBuzz(25), "Buzz");
+  }
 }
