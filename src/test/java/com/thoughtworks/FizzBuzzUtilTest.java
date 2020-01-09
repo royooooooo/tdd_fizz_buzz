@@ -32,23 +32,18 @@ public class FizzBuzzUtilTest {
   }
 
   @Test
-  public void should_return_FizzBuzz_given_multiple_of_3_and_5() {
-    assertEquals(fizzBuzz(15), "FizzBuzz");
-  }
-
-  @Test
   public void should_return_FizzWhizz_given_multiple_of_3_and_7() {
     assertEquals(fizzBuzz(21), "FizzWhizz");
-  }
-
-  @Test
-  public void should_return_FizzBuzzWhizz_given_multiple_of_3_5_and_7() {
-    assertEquals(fizzBuzz(105), "FizzBuzzWhizz");
   }
 
   @Test
   public void should_return_Fizz_if_contain_3() {
     assertEquals(fizzBuzz(13), "Fizz");
     assertEquals(fizzBuzz(30), "Fizz");
+  }
+
+  @Test
+  public void should_return_Buzz_if_contain_5_and_ignore_multiple_of_3_rule() {
+    assertEquals(fizzBuzz(235), "Buzz");
   }
 }
