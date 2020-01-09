@@ -45,4 +45,9 @@ public class FizzBuzzUtilTest {
   public void should_return_FizzWhizz_given_multiple_of_3_and_7() {
     assertEquals(fizzBuzz(21), "FizzWhizz");
   }
+
+  @Test
+  public void should_return_FizzBuzzWhizz_given_multiple_of_3_5_and_7() {
+    assertEquals(fizzBuzz(105), "FizzBuzzWhizz");
+  }
 }

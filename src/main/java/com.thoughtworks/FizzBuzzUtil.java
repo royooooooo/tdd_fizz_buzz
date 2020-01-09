@@ -5,6 +5,7 @@ public class FizzBuzzUtil {
   public static String fizzBuzz(int number) {
     if (number == 1) return "1";
     if (number == 2) return "2";
+    if (number % 105 == 0) return "FizzBuzzWhizz";
     if (number % 15 == 0) return "FizzBuzz";
     if (number % 35 == 0) return "BuzzWhizz";
     if (number % 21 == 0) return "FizzWhizz";
