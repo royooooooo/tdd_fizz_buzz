@@ -23,20 +23,18 @@ public class FizzBuzzUtil {
     int[] specificMultipleNumbers = null;
     if (isContainsCharacter(number, 7)) {
       if (isContainsCharacter(number, 3)) {
-        return specificNumberAndSlogan.get(3);
+        correctSlogan += specificNumberAndSlogan.get(3);
       }
       specificMultipleNumbers = new int[] {3, 7};
     } else if (isContainsCharacter(number, 5)) {
-      correctSlogan += specificNumberAndSlogan.get(5);
-      specificMultipleNumbers = new int[] {7};
+      specificMultipleNumbers = new int[] {5, 7};
     } else if (isContainsCharacter(number, 3)) {
-      return specificNumberAndSlogan.get(3);
+      correctSlogan += specificNumberAndSlogan.get(3);
     }
-
+    if (!correctSlogan.equals("")) return correctSlogan;
     if (isNull(specificMultipleNumbers)) {
       specificMultipleNumbers = new int[] {3, 5, 7};
     }
-
     correctSlogan += getSloganByMultipleOfSpecificNumbers(number, specificMultipleNumbers);
     if (correctSlogan.equals("")) correctSlogan += number;
     return correctSlogan;
